@@ -1,0 +1,69 @@
+﻿@page "{idEvento:int}"
+@model ObligatorioProgramacion2.Pages.Eventos.EditarEventoCorporativoModel
+@using Dominio;
+@{
+}
+
+<div class="row d-flex justify-content-center">
+    <form class="col-6" method="post">
+
+        <!--Method post sirve para que no se vea la informacion en la url-->
+
+        <input type="hidden" asp-for="EventoCorporativoEditar.idEvento" />
+
+
+        <div class="mb-3">
+            <label asp-for="EventoCorporativoEditar.Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" asp-for="EventoCorporativoEditar.Nombre">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="EventoCorporativoEditar.NombreEmpresa" class="form-label">Nombre</label>
+            <input type="text" class="form-control" asp-for="EventoCorporativoEditar.NombreEmpresa">
+        </div>
+
+
+
+        <div class="mb-3">
+            <label asp-for="EventoCorporativoEditar.Ubicacion" class="form-label">Ubicacion</label>
+            <input type="text" class="form-control" asp-for="EventoCorporativoEditar.Ubicacion">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="EventoCorporativoEditar.CantidadAsistentes" class="form-label">CantidadAsistentes</label>
+            <input type="text" class="form-control" asp-for="EventoCorporativoEditar.CantidadAsistentes">
+        </div>
+
+
+        <div class="mb-3">
+            <label asp-for="EventoCorporativoEditar.FechaRealizacion" class="form-label">Fecha Realizacion</label>
+            <input type="text" class="form-control" asp-for="EventoCorporativoEditar.FechaRealizacion">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="EventoCorporativoEditar.FechaFinalizacion" class="form-label">Fecha Finalizacion</label>
+            <input type="text" class="form-control" asp-for="EventoCorporativoEditar.FechaFinalizacion">
+        </div>
+
+
+        <div class="form-check">
+            <input asp-for="EventoCorporativoEditar.RequiereEquipamientoTecnologico" class="form-check-input" />
+            <label class="form-check-label" asp-for="EventoCorporativoEditar.RequiereEquipamientoTecnologico">Requiere Equipo</label>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="EventoCorporativoEditar.Estado" class="form-label">Estado</label>
+
+            <select class="form-control" asp-for="EventoCorporativoEditar.Estado" asp-items='@Html.GetEnumSelectList<EstadoEvento>()'>
+                <option> --Selecionar-- </option>
+         
+            </select>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Modificar</button>
+
+
+    </form>
+</div>

@@ -1,0 +1,47 @@
+﻿@page
+@model ObligatorioProgramacion2.Pages.Eventos.ContratarServicio_CorporativoModel
+@using Dominio;
+@{
+}
+<div class="row d-flex justify-content-center">
+    
+
+    <form class="col-6" method="post">
+
+        <!--Method post sirve para que no se vea la informacion en la url-->
+
+        <input type="hidden" asp-for="EventoAAgregarServicio.idEvento" />
+
+
+        <div class="mb-3">
+            <label asp-for="servicio.TipoServicio" class="form-label">Nombre</label>
+            <input type="text" class="form-control" asp-for="servicio.TipoServicio" required>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="servicio.Costo" class="form-label">Costo</label>
+            <input type="text" class="form-control" asp-for="servicio.Costo" required>
+        </div>
+
+
+        <div class="mb-3">
+            <label asp-for="servicio.Proveedor" class="form-label">Proveedor</label>
+            <input type="text" class="form-control" asp-for="servicio.Proveedor" required>
+        </div>
+
+
+        <div class="mb-3">
+            <label asp-for="IdCategoria" class="form-label">Categoria</label>
+            <select asp-for="IdCategoria" asp-items='new SelectList(CategoriaServicio.ListaCategoriaServicio, "IdCategoria", "NombreCategoria")'></select>
+        </div>
+
+        
+
+
+
+
+        <button type="submit" class="btn btn-primary">Agregar</button>
+
+
+    </form>
+</div>

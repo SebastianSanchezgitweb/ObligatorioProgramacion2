@@ -1,0 +1,108 @@
+﻿@page
+@model ObligatorioProgramacion2.Pages.Eventos.PromedioModel
+@using Dominio;
+@{
+}
+
+<div class="row d-flex justify-content-center">
+    <form class="col-6" method="post">
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["Error"]
+            </div>
+        }
+
+
+
+        <button type="submit" class="btn btn-primary" name="accion" value="corp">
+            Promedio Corporativo
+        </button>
+     
+        <div class="mb-3">
+            <label asp-for="promediocorp" class="form-label">Promedio corporativo</label>
+            <input type="text" class="form-control" asp-for="promediocorp">
+        </div>
+
+        <button type="submit" class="btn btn-primary" name="accion" value="social">
+            Promedio Social
+        </button>
+
+
+        
+        <div class="mb-3">
+            <label asp-for="promediosocial" class="form-label">Promedio Social </label>  
+
+            <input type="text" class="form-control" asp-for="promediosocial" >
+        </div>
+        
+   
+
+    </form>
+
+
+
+    <h1>Eventos Corporativos</h1>
+    @if(Model.MostrarCorp){
+    <table class="table table-bordered table-striped mt-4">
+        <tr><th>ID Cliente</th><th>Nombre Cliente</th><th>ID</th><th>NOMBRE</th><th>NombreEmpresa</th><th>ESTADO</th><th>UBICACION</th><th>CANTIDADASISTENTES</th><th>FECHAREALIZACION</th><th>FechaFinalizacion</th><th>Requiere Equipo</th> <th>Costo Total</th> <th>Costos de los Servicios</th> </tr>
+
+        @foreach (EventoCorporativo Even in Empresa.Instancia.ObtenerEventos().OfType<EventoCorporativo>())
+        {
+            <tr>
+                <td>@Even.Cliente.IdCliente</td>
+                <td>@Even.Cliente.Nombre</td>
+                <td>@Even.idEvento</td>
+                <td>@Even.Nombre</td>
+                <td>@Even.NombreEmpresa</td>
+                <td>@Even.Estado</td>
+                <td>@Even.Ubicacion</td>
+                <td>@Even.CantidadAsistentes</td>
+                <td>@Even.FechaRealizacion</td>
+                <td>@Even.FechaFinalizacion</td>
+                <td>@Even.RequiereEquipamientoTecnologico</td>
+                <td>@Even.CalcularCosto()</td>
+                <td>@Even.CalcularCostoServicios()</td>
+
+            </tr>
+
+        }
+
+
+    </table>
+    }
+
+
+    <h1>Eventos Sociales</h1>
+
+@if(Model.MostrarSocial){
+    <table class="table table-bordered table-striped mt-4">
+        <tr><th>ID Cliente</th><th>Nombre Cliente</th><th>ID</th><th>NOMBRE</th><th>ESTADO</th><th>UBICACION</th><th>CANTIDADASISTENTES</th><th>FECHAREALIZACION</th><th>FechaFinalizacion</th><th>TipoColaboracion</th><th>Catering</th><th>Costo Total</th> <th>Costos de los Servicios</th></tr>
+
+        @foreach (EventoSociales EvenS in Empresa.Instancia.ObtenerEventos().OfType<EventoSociales>())
+        {
+
+            <tr>
+                <td>@EvenS.Cliente.IdCliente</td>
+                <td>@EvenS.Cliente.Nombre</td>
+                <td>@EvenS.idEvento</td>
+                <td>@EvenS.Nombre</td>
+                <td>@EvenS.Estado</td>
+                <td>@EvenS.Ubicacion</td>
+                <td>@EvenS.CantidadAsistentes</td>
+                <td>@EvenS.FechaRealizacion</td>
+                <td>@EvenS.FechaFinalizacion</td>
+                <td>@EvenS.TipoColaboracion</td>
+                <td>@EvenS.IncluyeCatering</td>
+                <td>@EvenS.CalcularCosto()</td>
+                <td>@EvenS.CalcularCostoServicios()</td>
+
+            </tr>
+        }
+
+    </table>
+    }
+
+
+</div>

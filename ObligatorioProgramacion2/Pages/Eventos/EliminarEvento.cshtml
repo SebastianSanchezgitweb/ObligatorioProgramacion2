@@ -1,0 +1,28 @@
+﻿@page "{idEvento}"
+@model ObligatorioProgramacion2.Pages.Eventos.EliminarEventoModel
+@using Dominio;
+@{
+}
+
+<div class="row d-flex justify-content-center">
+    
+    <form class="col-6" method="post">
+        <p>¿Estás seguro de que deseas eliminar este Evento?</p>
+
+        <input type="hidden" asp-for="EventoAEliminar.idEvento"/>
+
+        <div class="mb-3">
+            <label asp-for="EventoAEliminar.idEvento" class="form-label">ID Evento</label>
+            <input type="text" class="form-control" asp-for="EventoAEliminar.idEvento" readonly>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="EventoAEliminar.Nombre" class="form-label">Nombre Evento</label>
+            <input type="text" class="form-control" asp-for="EventoAEliminar.Nombre" readonly>
+        </div>
+
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+
+
+    </form>
+</div>

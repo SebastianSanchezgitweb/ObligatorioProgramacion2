@@ -1,0 +1,56 @@
+﻿@page 
+@model ObligatorioProgramacion2.Pages.Eventos.DetalleCorporativoModel
+@using Dominio;
+@{
+}
+
+
+
+<table class="table table-bordered table-striped mt-4">
+    <tr><th>ID Cliente</th><th>Nombre Cliente</th><th>ID</th><th>NOMBRE</th><th>NombreEmpresa</th><th>ESTADO</th><th>UBICACION</th><th>CANTIDADASISTENTES</th><th>FECHAREALIZACION</th><th>FechaFinalizacion</th><th>Requiere Equipo</th> <th>Costo Total</th> <th>Costos de los Servicios</th> </tr>
+
+
+        <tr>
+        <td>@Model.EventoCorporativoDetalle.Cliente.IdCliente</td>
+        <td>@Model.EventoCorporativoDetalle.Cliente.Nombre</td>
+        <td>@Model.EventoCorporativoDetalle.idEvento</td>
+        <td>@Model.EventoCorporativoDetalle.Nombre</td>
+        <td>@Model.EventoCorporativoDetalle.NombreEmpresa</td>
+        <td>@Model.EventoCorporativoDetalle.Estado</td>
+        <td>@Model.EventoCorporativoDetalle.Ubicacion</td>
+        <td>@Model.EventoCorporativoDetalle.CantidadAsistentes</td>
+        <td>@Model.EventoCorporativoDetalle.FechaRealizacion</td>
+        <td>@Model.EventoCorporativoDetalle.FechaFinalizacion</td>
+        <td>@Model.EventoCorporativoDetalle.RequiereEquipamientoTecnologico</td>
+        <td>@Model.EventoCorporativoDetalle.CalcularCosto()</td>
+        <td>@Model.EventoCorporativoDetalle.CalcularCostoServicios()</td>
+        </tr>
+
+    
+
+
+</table>
+
+
+
+
+<table class="table table-bordered table-striped mt-4">
+    <tr><th>ID</th><th>Tipo Servicio</th><th>Categoria</th><th>Costo</th><th>Proveedor</th> </tr>
+
+    @foreach (ServiciosContratados servicios in Model.servicios)
+    {
+        <tr>
+            <td>@servicios.IDServicios</td>
+            <td>@servicios.TipoServicio</td>
+            <td>@servicios.Categoria.NombreCategoria</td>
+            <td>@servicios.Costo</td>
+            <td>@servicios.Proveedor</td>
+
+
+
+        </tr>
+
+    }
+
+
+</table>

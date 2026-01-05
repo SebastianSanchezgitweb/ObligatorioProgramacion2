@@ -1,0 +1,706 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\dominio\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|solutionrelative:dominio\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\dominio\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|solutionrelative:dominio\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\dominio\\categoriaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|solutionrelative:dominio\\categoriaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\dominio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|solutionrelative:dominio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\listacliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\listacliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\promedio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\promedio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\dominio\\estadoevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|solutionrelative:dominio\\estadoevento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\listacliente.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\listacliente.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\listadoeventos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\listadoeventos.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\listadoeventos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\listadoeventos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\dominio\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|solutionrelative:dominio\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\crearcorporativo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\crearcorporativo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\crearcorporativo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\crearcorporativo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\altaserviciocorporativo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\altaserviciocorporativo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\altaserviciocorporativo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\altaserviciocorporativo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\altaserviciosocial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\altaserviciosocial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\altaserviciosocial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\altaserviciosocial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\eliminarevento.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\eliminarevento.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\filtrarporfechaymonto.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\filtrarporfechaymonto.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\filtrarporfechaymonto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\filtrarporfechaymonto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\promedio.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\promedio.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\editareventocorporativo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\editareventocorporativo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\detallesocial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\detallesocial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\detallesocial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\detallesocial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\detallecorporativo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\detallecorporativo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\crearsocial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\crearsocial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\editareventocorporativo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\editareventocorporativo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\eliminarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\eliminarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\editareventosocial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\editareventosocial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\crearsocial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\crearsocial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\dominio\\eventosociales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|solutionrelative:dominio\\eventosociales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\editareventosocial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\editareventosocial.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\obligatorioprogramacion2\\pages\\eventos\\detallecorporativo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8814FF-1CB3-41E5-8E44-858C34C32EED}|ObligatorioProgramacion2\\ObligatorioProgramacion2.csproj|solutionrelative:obligatorioprogramacion2\\pages\\eventos\\detallecorporativo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\dominio\\eventocorporativo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|solutionrelative:dominio\\eventocorporativo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|c:\\users\\sebas\\source\\repos\\obligatorioprogramacion2\\dominio\\servicioscontratados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B03BA97-5788-424E-94A3-050E7AE9FB5F}|Dominio\\Dominio.csproj|solutionrelative:dominio\\servicioscontratados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\Empleado.cs",
+              "RelativeDocumentMoniker": "Dominio\\Empleado.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\Empleado.cs",
+              "RelativeToolTip": "Dominio\\Empleado.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T23:50:52.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Program.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Program.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Program.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T22:19:39.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\Login.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\Login.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\Login.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-04T04:19:39.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\Login.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T04:24:29.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoriaServicio.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\CategoriaServicio.cs",
+              "RelativeDocumentMoniker": "Dominio\\CategoriaServicio.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\CategoriaServicio.cs",
+              "RelativeToolTip": "Dominio\\CategoriaServicio.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAA7wAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T20:56:49.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\Cliente.cs",
+              "RelativeDocumentMoniker": "Dominio\\Cliente.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\Cliente.cs",
+              "RelativeToolTip": "Dominio\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T23:09:44.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Empresa.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\Empresa.cs",
+              "RelativeDocumentMoniker": "Dominio\\Empresa.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\Empresa.cs",
+              "RelativeToolTip": "Dominio\\Empresa.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T23:40:56.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EstadoEvento.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\EstadoEvento.cs",
+              "RelativeDocumentMoniker": "Dominio\\EstadoEvento.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\EstadoEvento.cs",
+              "RelativeToolTip": "Dominio\\EstadoEvento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T00:46:43.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListaCliente.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\ListaCliente.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\ListaCliente.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\ListaCliente.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\ListaCliente.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAqwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T22:55:22.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T07:49:36.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Index.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-20T21:49:04.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Promedio.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\Promedio.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\Promedio.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\Promedio.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\Promedio.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-06T15:46:40.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ListaCliente.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\ListaCliente.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\ListaCliente.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\ListaCliente.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\ListaCliente.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T23:52:16.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ListadoEventos.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\ListadoEventos.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\ListadoEventos.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\ListadoEventos.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\ListadoEventos.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T02:02:08.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ListadoEventos.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\ListadoEventos.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\ListadoEventos.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\ListadoEventos.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\ListadoEventos.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwFEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T07:59:08.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\Evento.cs",
+              "RelativeDocumentMoniker": "Dominio\\Evento.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\Evento.cs",
+              "RelativeToolTip": "Dominio\\Evento.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAIwDUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T16:58:12.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CrearCorporativo.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\CrearCorporativo.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\CrearCorporativo.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\CrearCorporativo.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\CrearCorporativo.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwCYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T06:52:13.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CrearCorporativo.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\CrearCorporativo.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\CrearCorporativo.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\CrearCorporativo.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\CrearCorporativo.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T06:24:31.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AltaServicioCorporativo.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioCorporativo.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioCorporativo.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioCorporativo.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioCorporativo.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:02:42.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AltaServicioCorporativo.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioCorporativo.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioCorporativo.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioCorporativo.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioCorporativo.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T18:01:04.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AltaServicioSocial.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioSocial.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioSocial.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioSocial.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioSocial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-03T08:10:41.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AltaServicioSocial.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioSocial.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioSocial.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioSocial.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\AltaServicioSocial.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T08:11:22.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EliminarEvento.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EliminarEvento.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\EliminarEvento.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EliminarEvento.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\EliminarEvento.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T05:34:09.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAcwD8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T06:34:53.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FiltrarPorFechaYMonto.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\FiltrarPorFechaYMonto.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\FiltrarPorFechaYMonto.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\FiltrarPorFechaYMonto.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\FiltrarPorFechaYMonto.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T00:52:04.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FiltrarPorFechaYMonto.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\FiltrarPorFechaYMonto.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\FiltrarPorFechaYMonto.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\FiltrarPorFechaYMonto.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\FiltrarPorFechaYMonto.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T00:48:08.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DetalleSocial.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\DetalleSocial.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\DetalleSocial.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\DetalleSocial.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\DetalleSocial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAC2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-03T07:55:57.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Promedio.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\Promedio.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\Promedio.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\Promedio.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\Promedio.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T15:48:08.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EditarEventoCorporativo.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoCorporativo.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoCorporativo.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoCorporativo.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoCorporativo.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAD0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T05:37:06.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DetalleSocial.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\DetalleSocial.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\DetalleSocial.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\DetalleSocial.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\DetalleSocial.cshtml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T07:57:07.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DetalleCorporativo.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\DetalleCorporativo.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\DetalleCorporativo.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\DetalleCorporativo.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\DetalleCorporativo.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-29T21:04:16.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CrearSocial.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\CrearSocial.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\CrearSocial.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\CrearSocial.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\CrearSocial.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T23:08:11.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EditarEventoCorporativo.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoCorporativo.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoCorporativo.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoCorporativo.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoCorporativo.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:47:01.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "EliminarEvento.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EliminarEvento.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\EliminarEvento.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EliminarEvento.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\EliminarEvento.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T05:31:23.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CrearSocial.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\CrearSocial.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\CrearSocial.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\CrearSocial.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\CrearSocial.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T23:17:25.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EditarEventoSocial.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoSocial.cshtml",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoSocial.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoSocial.cshtml",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoSocial.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T08:15:35.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EventoSociales.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\EventoSociales.cs",
+              "RelativeDocumentMoniker": "Dominio\\EventoSociales.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\EventoSociales.cs",
+              "RelativeToolTip": "Dominio\\EventoSociales.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:14:36.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EditarEventoSocial.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoSocial.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoSocial.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoSocial.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\EditarEventoSocial.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T08:15:44.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DetalleCorporativo.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\DetalleCorporativo.cshtml.cs",
+              "RelativeDocumentMoniker": "ObligatorioProgramacion2\\Pages\\Eventos\\DetalleCorporativo.cshtml.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\ObligatorioProgramacion2\\Pages\\Eventos\\DetalleCorporativo.cshtml.cs",
+              "RelativeToolTip": "ObligatorioProgramacion2\\Pages\\Eventos\\DetalleCorporativo.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T21:17:11.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "EventoCorporativo.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\EventoCorporativo.cs",
+              "RelativeDocumentMoniker": "Dominio\\EventoCorporativo.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\EventoCorporativo.cs",
+              "RelativeToolTip": "Dominio\\EventoCorporativo.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T17:16:31.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ServiciosContratados.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\ServiciosContratados.cs",
+              "RelativeDocumentMoniker": "Dominio\\ServiciosContratados.cs",
+              "ToolTip": "C:\\Users\\sebas\\source\\repos\\ObligatorioProgramacion2\\Dominio\\ServiciosContratados.cs",
+              "RelativeToolTip": "Dominio\\ServiciosContratados.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T19:50:02.421Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

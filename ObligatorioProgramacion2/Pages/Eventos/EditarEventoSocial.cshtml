@@ -1,0 +1,66 @@
+﻿@page "{idEvento:int}"
+@model ObligatorioProgramacion2.Pages.Eventos.EditarEventoSocialModel
+@using Dominio;
+@{
+}
+
+<div class="row d-flex justify-content-center">
+    <form class="col-6" method="post">
+        <!--Method post sirve para que no se vea la informacion en la url-->
+
+        <input type="hidden" asp-for="EventoSocialEditar.idEvento" />
+
+        <div class="mb-3">
+            <label asp-for="EventoSocialEditar.Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" asp-for="EventoSocialEditar.Nombre">
+        </div>
+
+
+
+        <div class="mb-3">
+            <label asp-for="EventoSocialEditar.Ubicacion" class="form-label">Ubicacion</label>
+            <input type="text" class="form-control" asp-for="EventoSocialEditar.Ubicacion">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="EventoSocialEditar.CantidadAsistentes" class="form-label">CantidadAsistentes</label>
+            <input type="text" class="form-control" asp-for="EventoSocialEditar.CantidadAsistentes">
+        </div>
+
+
+        <div class="mb-3">
+            <label asp-for="EventoSocialEditar.FechaRealizacion" class="form-label">Fecha Realizacion</label>
+            <input type="text" class="form-control" asp-for="EventoSocialEditar.FechaRealizacion">
+        </div>
+        <div class="mb-3">
+            <label asp-for="EventoSocialEditar.FechaFinalizacion" class="form-label">Fecha Finalizacion</label>
+            <input type="text" class="form-control" asp-for="EventoSocialEditar.FechaFinalizacion">
+        </div>
+
+
+        <div class="mb-3">
+            <label asp-for="EventoSocialEditar.TipoColaboracion" class="form-label">Tipo Celebracion</label>
+            <input type="text" class="form-control" asp-for="EventoSocialEditar.TipoColaboracion">
+        </div>
+
+         <div class="form-check">
+            <input asp-for="EventoSocialEditar.IncluyeCatering" class="form-check-input" />
+            <label class="form-check-label" asp-for="EventoSocialEditar.IncluyeCatering">Incluye Catering</label>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="EventoSocialEditar.Estado" class="form-label">Estado</label>
+
+            <select class="form-control" asp-for="EventoSocialEditar.Estado" asp-items='@Html.GetEnumSelectList<EstadoEvento>()'>
+                <option> --Selecionar-- </option>
+
+            </select>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Agregar</button>
+
+
+    </form>
+</div>

@@ -1,0 +1,92 @@
+﻿@page 
+@model ObligatorioProgramacion2.Pages.Eventos.ClienteModel
+@using Dominio
+@{
+}
+
+
+<div class="row d-flex justify-content-center">
+
+
+    <form class="col-6" method="post">
+
+        <!--Method post sirve para que no se vea la informacion en la url-->
+
+        <input type="hidden" asp-for="nuevoCliente.IdCliente" />
+
+
+        <div class="mb-3">
+            <label asp-for="nuevoCliente.Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" asp-for="nuevoCliente.Nombre" required>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="nuevoCliente.TipodeIdentificacion" class="form-label">Tipo Identificacion</label>
+            <input type="text" class="form-control" asp-for="nuevoCliente.TipodeIdentificacion" required>
+        </div>
+
+
+        <div class="mb-3">
+            <label asp-for="nuevoCliente.Identificacion" class="form-label">Identificacion</label>
+            <input type="text" class="form-control" asp-for="nuevoCliente.Identificacion" required>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="nuevoCliente.Telefono" class="form-label">Telefono</label>
+            <input type="text" class="form-control" asp-for="nuevoCliente.Telefono" required>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="nuevoCliente.Direccion" class="form-label">Direccion</label>
+            <input type="text" class="form-control" asp-for="nuevoCliente.Direccion" required>
+        </div>
+
+       
+
+
+
+
+
+
+        <button type="submit" class="btn btn-primary">Agregar</button>
+
+
+    </form>
+</div>
+
+
+
+<h1>Lista de Clientes</h1>
+
+
+
+<table class="table table-bordered table-striped mt-4">
+    <tr> <th>ID</th> <th>NOMBRE</th><th>TIPOIDENTIFICACION</th><th>IDENTIFICACION</th><th>TELEFONO</th><th>DIRECCION</th><th>CREAR EVENTO</th></tr>
+
+    @foreach (Cliente clien in Empresa.Instancia.ObtenerCliente())
+    {
+        <tr>
+            <td>@clien.IdCliente</td>
+
+            <td>@clien.Nombre</td>
+            <td>@clien.TipodeIdentificacion</td>
+            <td>@clien.Identificacion</td>
+            <td>@clien.Telefono</td>
+            <td>@clien.Direccion</td>
+
+            <td>
+                <a class="btn btn-outline-success" asp-page="CrearCorporativo" asp-route-idCliente="@clien.IdCliente">Corporativo</a>
+
+                <a class="btn btn-outline-primary" asp-page="CrearSocial" asp-route-idCliente="@clien.IdCliente">Social</a>
+            </td>
+
+            
+            <!--el parametro a pasar debe ser igual asp-route-(idCliente) q el q esta en OnGet
+            -->
+
+        </tr>
+    }
+
+    
+
+</table>

@@ -1,0 +1,50 @@
+﻿@page
+@model ObligatorioProgramacion2.Pages.Eventos.LoginModel
+@using Dominio
+
+@{
+    ViewData["Title"] = "Login"; //Asigna el titulo a la pagina
+    Layout = null; //oculta el layout lo que me permite ocultar el footer y el header
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card shadow-lg rounded-4">
+                <div class="card-body">
+                    <h3 class="text-center mb-4">Iniciar Sesión</h3>
+
+                    <form method="post">
+                        <div class="mb-3">
+                            <label class="form-label">Usuario</label>
+                            <input type="text" class="form-control"
+                                   asp-for="Usuario" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Contraseña</label>
+                            <input type="password" class="form-control"
+                                   asp-for="Contraseña" />
+                        </div>
+
+                        @if (Model.MensajeError != null)
+                        {
+                            <div class="alert alert-danger text-center">
+                                @Model.MensajeError
+                            </div>
+                        }
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">
+                                Ingresar
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

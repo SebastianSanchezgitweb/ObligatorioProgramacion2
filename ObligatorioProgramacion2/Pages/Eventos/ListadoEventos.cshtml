@@ -1,0 +1,88 @@
+﻿@page 
+@model ObligatorioProgramacion2.Pages.Eventos.ListadoModel
+@using Dominio
+
+@{
+}
+
+<h1>Listado de Eventos</h1>
+
+<a class="btn btn-primary" asp-area="" asp-page="/Eventos/ListaCliente">Nuevo</a>
+
+
+  
+<h2>Eventos Corporativos</h2>
+<table class="table table-bordered table-striped mt-4">
+    <tr><th>Nombre Cliente</th><th>ID</th><th>NOMBRE</th><th>NombreEmpresa</th><th>Estado</th> <th> </th><th>  </th>  <th>  </th>  <th>  </th> </tr>
+
+    @foreach (EventoCorporativo evenCorporativo in Empresa.Instancia.ObtenerEventos().OfType<EventoCorporativo>())
+    {
+        <tr>
+            
+            <td>@evenCorporativo.Cliente.Nombre</td>
+            <td>@evenCorporativo.idEvento</td> 
+            <td>@evenCorporativo.Nombre</td>
+            <td>@evenCorporativo.NombreEmpresa</td>
+            <td>@evenCorporativo.Estado</td>
+
+
+            <td>
+                <a class="btn btn-outline-info" asp-page="AltaServicioCorporativo" asp-route-idEvento="@evenCorporativo.idEvento">Contratar Servicio</a>
+
+            </td>
+            <td>
+                <a class="btn btn-outline-success" asp-page="EditarEventoCorporativo" asp-route-idEvento="@evenCorporativo.idEvento">Editar</a>
+            </td>
+            <td>
+                <a class="btn btn-outline-danger" asp-page="EliminarEvento" asp-route-idEvento="@evenCorporativo.idEvento">Eliminar</a>
+            </td>
+            <td>
+                <a class="btn btn-outline-secondary" asp-page="DetalleCorporativo" asp-route-idEvento="@evenCorporativo.idEvento">Detalle</a>
+
+            </td>
+            
+
+        </tr>
+
+    }
+
+
+</table>
+
+<h2>Evento Sociales</h2>
+
+<table class="table table-bordered table-striped mt-4">
+    <tr><th>ID Cliente</th><th>Nombre Cliente</th><th>ID</th><th>NOMBRE</th><th>ESTADO</th><th> </th> <th> </th> <th> </th> <th> </th> </tr>
+
+    @foreach (EventoSociales evenSocial in Empresa.Instancia.ObtenerEventos().OfType<EventoSociales>())
+    {
+        <tr>
+            <td>@evenSocial.Cliente.IdCliente</td>
+            <td>@evenSocial.Cliente.Nombre</td>
+            <td>@evenSocial.idEvento</td>
+            <td>@evenSocial.Nombre</td>
+            <td>@evenSocial.Estado</td>
+           
+            <td>
+                <a class="btn btn-outline-info" asp-page="AltaServicioSocial" asp-route-idEvento="@evenSocial.idEvento">Contratar Servicio</a>
+
+            </td>
+            <td>
+                <a class="btn  btn-outline-primary" asp-page="EditarEventoSocial" asp-route-idEvento="@evenSocial.idEvento">Editar</a>
+
+            </td>
+            <td>
+                <a class="btn btn-outline-danger" asp-page="EliminarEvento" asp-route-idEvento="@evenSocial.idEvento">Eliminar</a>
+
+            </td>
+            <td>
+                <a class="btn btn-outline-secondary" asp-page="DetalleSocial" asp-route-idEvento="@evenSocial.idEvento">Detalle</a>
+
+            </td>
+        </tr>
+
+    }
+
+
+</table>
+
