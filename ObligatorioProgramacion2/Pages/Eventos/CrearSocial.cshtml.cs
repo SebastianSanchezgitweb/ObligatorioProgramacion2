@@ -1,43 +1,54 @@
 using Dominio;
+using AccesoDatos;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ObligatorioProgramacion2.Pages.Eventos
 {
     public class CrearSocialModel : PageModel
     {
+        private readonly ClienteRepositorio _clienteRepo;
+        private readonly EventoRepositorio _eventoRepo;
+
+        public CrearSocialModel(ClienteRepositorio clienteRepo, EventoRepositorio eventoRepo)
+        {
+            _clienteRepo = clienteRepo;
+            _eventoRepo = eventoRepo;
+        }
 
         [BindProperty]
-        public EventoSociales NuevoEventoSocial{ get; set; }
-
+        public EventoSociales NuevoEventoSocial { get; set; }
         public Cliente Cliente { get; set; }
 
-        public IActionResult OnGet(int idCliente) //OnGet - Carga inicial de la página
-
+        public IActionResult OnGet(int idCliente)
         {
-            Cliente = Empresa.Instancia.ObtenerClientePorId(idCliente);
+            if (HttpContext.Session.GetInt32("IdEmpleado") == null) return RedirectToPage("/Login");
 
-            if (Cliente == null)
-            {
-                return NotFound();
-            }
+            // Buscamos el cliente en la BD
+            Cliente = _clienteRepo.ObtenerClientes().FirstOrDefault(c => c.IdCliente == idCliente);
 
+            if (Cliente == null) return NotFound();
             return Page();
         }
 
-        public IActionResult OnPost(int idCliente)//Se ejecuta cuando envías el formulario (presionas el botón Submit/Guardar).
+        public IActionResult OnPost(int idCliente)
         {
-            // recupero cliente
-            Cliente = Empresa.Instancia.ObtenerClientePorId(idCliente);
+            Cliente = _clienteRepo.ObtenerClientes().FirstOrDefault(c => c.IdCliente == idCliente);
+            if (Cliente == null) return NotFound();
 
-            // asigno el objeto Cliente al evento
             NuevoEventoSocial.Cliente = Cliente;
 
-            // Guardar el evento
-            Empresa.Instancia.AgregarEvento(NuevoEventoSocial);
-
-            return RedirectToPage("ListadoEventos");
+            try
+            {
+                _eventoRepo.AgregarEvento(NuevoEventoSocial);
+                TempData["Mensaje"] = "Evento Social creado con éxito.";
+                return RedirectToPage("ListadoEventos");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, "Error: " + ex.Message);
+                return Page();
+            }
         }
     }
 }

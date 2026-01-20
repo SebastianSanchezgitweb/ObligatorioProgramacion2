@@ -16,10 +16,10 @@ namespace Dominio
 
 
         public int IdCategoria { get; set; }
-        public int Costo { get; set; }
+        public float Costo { get; set; }
         public string Proveedor { get; set; }
 
-        public int IDServicios { get; set; }
+        public int IdServicio { get; set; }
 
 
        
@@ -32,7 +32,7 @@ namespace Dominio
 
         public ServiciosContratados(int Idservicios,string tiposervicio,int precio, string proveedor)
         {
-            IDServicios = Idservicios;
+            IdServicio = Idservicios;
             TipoServicio = tiposervicio;
             Costo = precio;
             Proveedor = proveedor;

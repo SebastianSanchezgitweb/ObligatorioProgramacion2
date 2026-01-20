@@ -2,47 +2,32 @@ using Dominio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ObligatorioProgramacion2.Pages.Eventos
+public class DetalleSocialModel : PageModel
 {
-    public class DetalleSocialModel : PageModel
+    [BindProperty]
+    public EventoSociales? EventoSocialesDetalle { get; set; }
+
+    public List<ServiciosContratados> servicios;
+
+    public IActionResult OnGet(int idEvento)
     {
-        [BindProperty]
-        public EventoSociales EventoSocialesDetalle { get; set; }
-
-        public List<ServiciosContratados> servicios;
-
-        public int IDEvento { get; set; }
-
-        float costoCorporativo { get; set; }
-
-
-        public IActionResult OnGet(int idEvento) //OnGet - Carga inicial de la página
-
+        // Verifica si el empleado está logueado
+        if (HttpContext.Session.GetInt32("IdEmpleado") == null)
         {
-
-            EventoSocialesDetalle = Empresa.Instancia.ObtenerEventoSocialesPorId(idEvento);
-
-            IDEvento = EventoSocialesDetalle.idEvento;
-
-            if (EventoSocialesDetalle == null)
-            {
-                return NotFound();
-
-            }
-
-            servicios = EventoSocialesDetalle.ObtenerServicios();
-
-
-            return Page();
+            return RedirectToPage("/Login");
         }
 
+        // Obtiene los datos del evento social por su ID
+        EventoSocialesDetalle = Empresa.Instancia.ObtenerEventoSocialesPorId(idEvento);
 
-
-        public IActionResult OnPost()
+        if (EventoSocialesDetalle == null)
         {
-
-
-            return RedirectToPage("ListadoEventos");
+            return NotFound();
         }
+
+        // Carga la lista de servicios contratados para este evento
+        servicios = EventoSocialesDetalle.ObtenerServicios();
+
+        return Page();
     }
 }

@@ -1,61 +1,53 @@
+using AccesoDatos;
 using Dominio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ObligatorioProgramacion2.Pages.Eventos
 {
-    public class AltaServicioSocialModel : PageModel
+    // ... (Usings similares)
+
+    namespace ObligatorioProgramacion2.Pages.Eventos
     {
-        [BindProperty]
-        public EventoSociales EventoAAgregarServicio { get; set; }
-
-        [BindProperty]
-        public ServiciosContratados servicio { get; set; }
-
-        [BindProperty]
-        public int IdCategoria { get; set; }
-
-
-
-        public IActionResult OnGet(int idEvento)
+        public class AltaServicioSocialModel : PageModel
         {
+            private readonly EventoRepositorio _eventoRepo;
 
-
-            EventoAAgregarServicio = Empresa.Instancia.ObtenerEventoSocialesPorId(idEvento);
-
-            if (EventoAAgregarServicio == null)
+            public AltaServicioSocialModel(EventoRepositorio eventoRepo)
             {
-                return NotFound();
+                _eventoRepo = eventoRepo;
             }
-            return Page();
-        }
 
-        public IActionResult OnPost()
-        {
+            [BindProperty]
+            public EventoSociales EventoAAgregarServicio { get; set; }
 
+            [BindProperty]
+            public ServiciosContratados servicio { get; set; }
 
-            Evento even = Empresa.Instancia.ObtenerEventoSocialesPorId(EventoAAgregarServicio.idEvento);
+            [BindProperty]
+            public int IdCategoria { get; set; }
 
-            if (servicio.Costo < 0)
+            public IActionResult OnGet(int idEvento)
             {
-                TempData["Error"] = "El Costo no Puede ser Menor a 0";
+                if (HttpContext.Session.GetInt32("IdEmpleado") == null) return RedirectToPage("/Login");
+
+                // Aquí podrías necesitar un método ObtenerEventoSocialPorId en el repo similar al corporativo
                 return Page();
             }
-            else
+
+            public IActionResult OnPost()
             {
+                if (servicio.Costo < 0)
+                {
+                    TempData["Error"] = "El costo no puede ser negativo";
+                    return Page();
+                }
 
-                Empresa.Instancia.AgregarServicioEvento(servicio, even, IdCategoria);
-                TempData["Mensaje"] = $"Servicio {servicio.Categoria.NombreCategoria} Agregado!";
+                _eventoRepo.AgregarServicioAEvento(servicio, EventoAAgregarServicio.idEvento, IdCategoria);
+
+                TempData["Mensaje"] = "Servicio social contratado.";
+                return RedirectToPage("ListadoEventos");
             }
-
-            return RedirectToPage("ListadoEventos");
-
-
-
-
-
-           
-
         }
     }
 }

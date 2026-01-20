@@ -1,5 +1,5 @@
 ﻿@page
-@model ObligatorioProgramacion2.Pages.Eventos.DetalleSocialModel
+@model DetalleSocialModel
 @using Dominio;
 @{
 }
@@ -39,7 +39,7 @@
     @foreach (ServiciosContratados servicios in Model.servicios)
     {
         <tr>
-            <td>@servicios.IDServicios</td>
+            <td>@servicios.IdServicio</td>
             <td>@servicios.TipoServicio</td>
             <td>@servicios.Categoria.NombreCategoria</td>
             <td>@servicios.Costo</td>

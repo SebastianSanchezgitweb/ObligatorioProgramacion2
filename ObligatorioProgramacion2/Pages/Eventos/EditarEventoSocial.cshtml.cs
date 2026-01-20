@@ -15,6 +15,10 @@ namespace ObligatorioProgramacion2.Pages.Eventos
         public IActionResult OnGet(int idEvento) //OnGet - Carga inicial de la página
 
         {
+            if (HttpContext.Session.GetInt32("IdEmpleado") == null)
+            {
+                return RedirectToPage("/Login");
+            }
 
 
             EventoSocialEditar = Empresa.Instancia.ObtenerEventoSocialesPorId(idEvento);

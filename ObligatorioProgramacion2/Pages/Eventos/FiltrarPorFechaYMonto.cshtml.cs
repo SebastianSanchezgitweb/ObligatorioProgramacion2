@@ -16,8 +16,13 @@ namespace ObligatorioProgramacion2.Pages.Eventos
         [BindProperty]
         public int Monto { get; set; }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
+            if (HttpContext.Session.GetInt32("IdEmpleado") == null)
+            {
+                return RedirectToPage("/Login");
+            }
+             return Page();
 
         }
 

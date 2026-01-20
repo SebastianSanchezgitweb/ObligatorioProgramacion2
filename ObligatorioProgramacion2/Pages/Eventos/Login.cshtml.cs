@@ -1,16 +1,24 @@
-using Dominio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using AccesoDatos;
+using Dominio;
 
-namespace ObligatorioProgramacion2.Pages.Eventos
+namespace ObligatorioProgramacion2.Pages
 {
     public class LoginModel : PageModel
     {
+        private EmpleadoRepositorio _repo;
+
+        public LoginModel(EmpleadoRepositorio repo)
+        {
+            _repo = repo;
+        }
+
         [BindProperty]
         public string Usuario { get; set; }
 
         [BindProperty]
-        public string Contraseña { get; set; }
+        public string Contrasenia { get; set; }
 
         public string MensajeError { get; set; }
 
@@ -20,27 +28,19 @@ namespace ObligatorioProgramacion2.Pages.Eventos
 
         public IActionResult OnPost()
         {
-            Empleado empleadoEncontrado = null;
+            Empleado emp = _repo.Login(Usuario, Contrasenia);
 
-            foreach (Empleado emp in Empresa.Instancia.ObtenerEmpleados())
-            {
-                if (emp.Usuario == Usuario && emp.Contraseña == Contraseña)
-                {
-                    empleadoEncontrado = emp;
-                    break;
-                }
-            }
-
-            if (empleadoEncontrado != null)
-            {
-                // Login correcto
-                return RedirectToPage("ListaCliente");
-            }
-            else
+            if (emp == null)
             {
                 MensajeError = "Usuario o contraseña incorrectos";
                 return Page();
             }
+
+            HttpContext.Session.SetInt32("IdEmpleado", emp.idEmpleado);
+            HttpContext.Session.SetString("NombreEmpleado", emp.Nombre);
+
+            return RedirectToPage("/Eventos/ListaCliente");
         }
+
     }
 }

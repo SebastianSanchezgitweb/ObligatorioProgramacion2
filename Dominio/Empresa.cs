@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
@@ -41,8 +42,7 @@ namespace Dominio
             clientes = new List<Cliente>();
             ListaEventosFecha = new List<Evento>();
 
-            PrecargaEmpleado();
-            PrecargarCliente();
+        
         }
 
         public void AgregarServicioEvento(ServiciosContratados servicio, Evento evento, int idcategoria)
@@ -50,7 +50,7 @@ namespace Dominio
 
           
 
-            servicio.IDServicios = evento.proximoIDServicio++;  //aumento el id de servicio 
+            servicio.IdServicio = evento.proximoIDServicio++;  //aumento el id de servicio 
                                                                
             servicio.Categoria = ObtenerCategoriaPorId(idcategoria); // servicio.IdCategoria = idcategoria;
             evento.servicioscontratados.Add(servicio);
@@ -103,17 +103,20 @@ namespace Dominio
         }
 
 
-        private int proximoIdCliente = 6;
-        public bool AgregarCliente(Cliente constCliente)
-        {
-            constCliente.IdCliente = proximoIdCliente++;
-            if (VerificarSiExisteCliente(constCliente) == false  )
-            {
-                clientes.Add(constCliente);
-                return true;
-            }
-            return false;
-        }
+        /*   private int proximoIdCliente = 6;
+           public bool AgregarCliente(Cliente constCliente)
+           {
+               constCliente.IdCliente = proximoIdCliente++;
+               if (VerificarSiExisteCliente(constCliente) == false  )
+               {
+                   clientes.Add(constCliente);
+                   return true;
+               }
+               return false;
+           }*/
+
+       
+
 
         public bool VerificarSiExisteCliente(Cliente constCliente)
         {
@@ -129,36 +132,7 @@ namespace Dominio
         }
 
 
-        public void PrecargarCliente()
-        {
-            Cliente c1 = new Cliente(1, 123456789, "CI", 091222444, "seba", "barrio ceibal");
-            Cliente c2 = new Cliente(2, 20456789, "RUT", 092334455, "Marcos", "Salto Nuevo");
-            Cliente c3 = new Cliente(3, 179998881, "CI", 098112233, "Lucía", "Zona Este");
-            Cliente c4 = new Cliente(4, 21487301, "RUT", 097556677, "Ana", "Barrio Artigas");
-            Cliente c5 = new Cliente(5, 123456789, "CI", 091222444, "Seba", "Barrio Ceibal");
-
-            clientes.Add(c1);
-            clientes.Add(c2);
-            clientes.Add(c3);
-            clientes.Add(c4);
-            clientes.Add(c5);
-        }
-
-        public void PrecargaEmpleado()
-        {
-            Empleado e1 = new Empleado(1, "Juan", "Pérez", "45678912", 098765432, "juanp", "pass123");
-            Empleado e2 = new Empleado(2, "María", "Gómez", "51234987", 091234567, "mariag", "clave456");
-            Empleado e3 = new Empleado(3, "Lucas", "Rodríguez", "47812345", 099876543, "lucasr", "abc789");
-            Empleado e4 = new Empleado(4, "Ana", "Fernández", "50123498", 092345678, "anafer", "pass999");
-            Empleado e5 = new Empleado(5, "Diego", "Sosa", "44567890", 097112233, "diegos", "qwerty");
-
-            empleados.Add(e1);
-            empleados.Add(e2);
-            empleados.Add(e3);
-            empleados.Add(e4);
-            empleados.Add(e5);
-
-        }
+       
 
         public List<Empleado> ObtenerEmpleados()
         {
