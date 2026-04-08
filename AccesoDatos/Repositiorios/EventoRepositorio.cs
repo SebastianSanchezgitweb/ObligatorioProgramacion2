@@ -15,11 +15,14 @@ namespace AccesoDatos
             _connection = connection;
         }
 
-        // 1. LISTADO GENERAL
+        // 1. LISTADO GENERAL (ahora trae también Nombre del Cliente)
         public List<Evento> ObtenerEventos()
         {
             List<Evento> lista = new List<Evento>();
-            string sql = "SELECT * FROM Evento";
+            string sql = @"
+SELECT e.*, c.IdCliente AS ClienteId, c.Nombre AS ClienteNombre
+FROM Evento e
+LEFT JOIN Cliente c ON e.IdCliente = c.IdCliente";
 
             if (_connection.State != ConnectionState.Closed)
                 _connection.Close();
@@ -31,7 +34,7 @@ namespace AccesoDatos
             {
                 while (reader.Read())
                 {
-                    string tipo = reader["TipoEvento"].ToString();
+                    string tipo = reader["TipoEvento"]?.ToString();
                     Evento e;
 
                     if (tipo == "Corporativo")
@@ -56,13 +59,57 @@ namespace AccesoDatos
                     }
 
                     // Propiedades comunes
-                    e.idEvento = (int)reader["IdEvento"];
-                    e.Nombre = reader["Nombre"].ToString();
-                    e.Ubicacion = reader["Ubicacion"].ToString();
-                    e.Estado = Enum.Parse<EstadoEvento>(reader["Estado"].ToString());
-                    e.FechaRealizacion = (DateTime)reader["FechaRealizacion"];
-                    e.FechaFinalizacion = (DateTime)reader["FechaFinalizacion"];
-                    e.CantidadAsistentes = (int)reader["CantidadAsistentes"];
+                    e.idEvento = reader["IdEvento"] != DBNull.Value ? (int)reader["IdEvento"] : 0;
+                    e.Nombre = reader["Nombre"]?.ToString();
+                    e.Ubicacion = reader["Ubicacion"]?.ToString();
+                    e.Estado = reader["Estado"] != DBNull.Value && !string.IsNullOrEmpty(reader["Estado"].ToString())
+                        ? Enum.Parse<EstadoEvento>(reader["Estado"].ToString())
+                        : default;
+                    e.FechaRealizacion = reader["FechaRealizacion"] != DBNull.Value ? (DateTime)reader["FechaRealizacion"] : DateTime.MinValue;
+                    e.FechaFinalizacion = reader["FechaFinalizacion"] != DBNull.Value ? (DateTime)reader["FechaFinalizacion"] : DateTime.MinValue;
+                    e.CantidadAsistentes = reader["CantidadAsistentes"] != DBNull.Value ? (int)reader["CantidadAsistentes"] : 0;
+
+                    // Cliente (si existe)
+                    if (reader["ClienteId"] != DBNull.Value)
+                    {
+                        e.Cliente = new Cliente
+                        {
+                            IdCliente = (int)reader["ClienteId"],
+                            Nombre = reader["ClienteNombre"]?.ToString()
+                        };
+                    }
+                    else
+                    {
+                        e.Cliente = new Cliente(); // evita null refs en vistas
+                    }
+
+                    // Cliente (si existe)
+                    if (reader["ClienteId"] != DBNull.Value)
+                    {
+                        e.Cliente = new Cliente
+                        {
+                            IdCliente = (int)reader["ClienteId"],
+                            Nombre = reader["ClienteNombre"]?.ToString()
+                        };
+                    }
+                    else
+                    {
+                        e.Cliente = new Cliente(); // evita null refs en vistas
+                    }
+
+                    // Cliente (si existe)
+                    if (reader["ClienteId"] != DBNull.Value)
+                    {
+                        e.Cliente = new Cliente
+                        {
+                            IdCliente = (int)reader["ClienteId"],
+                            Nombre = reader["ClienteNombre"]?.ToString()
+                        };
+                    }
+                    else
+                    {
+                        e.Cliente = new Cliente(); // evita null refs en vistas
+                    }
 
                     lista.Add(e);
                 }
@@ -276,28 +323,43 @@ namespace AccesoDatos
         // 6. AGREGAR SERVICIO A EVENTO
         public void AgregarServicioAEvento(ServiciosContratados servicio, int idEvento, int idCategoria)
         {
-            string sql = @"
-            INSERT INTO SERVICIOS_CONTRATADOS
-            (IdEvento, IdCategoria, TipoServicio, Costo, Proveedor)
-            VALUES
-            (@idEvento, @idCat, @tipo, @costo, @prov)";
+            if (idEvento <= 0) throw new InvalidOperationException("IdEvento inválido.");
 
-            if (_connection.State != ConnectionState.Closed)
-                _connection.Close();
+            if (BuscarPorId(idEvento) == null)
+                throw new InvalidOperationException($"Evento con Id {idEvento} no existe.");
 
+            if (_connection.State != ConnectionState.Closed) _connection.Close();
             _connection.Open();
 
-            using (SqlCommand cmd = new SqlCommand(sql, _connection))
+            try
             {
-                cmd.Parameters.AddWithValue("@idEvento", idEvento);
-                cmd.Parameters.AddWithValue("@idCat", idCategoria);
-                cmd.Parameters.AddWithValue("@tipo", servicio.TipoServicio);
-                cmd.Parameters.AddWithValue("@costo", servicio.Costo);
-                cmd.Parameters.AddWithValue("@prov", servicio.Proveedor);
-                cmd.ExecuteNonQuery();
-            }
+                using (SqlCommand chkCat = new SqlCommand("SELECT COUNT(1) FROM CATEGORIA_SERVICIO WHERE IdCategoria = @idCategoria", _connection))
+                {
+                    chkCat.Parameters.Add("@idCategoria", System.Data.SqlDbType.Int).Value = idCategoria;
+                    int catCount = Convert.ToInt32(chkCat.ExecuteScalar() ?? 0);
+                    if (catCount == 0) throw new InvalidOperationException($"Categoría con Id {idCategoria} no existe.");
+                }
 
-            _connection.Close();
+                string sql = @"
+            INSERT INTO SERVICIOS_CONTRATADOS
+                (IdEvento, IdCategoria, TipoServicio, Costo, Proveedor)
+            VALUES
+                (@idEvento, @idCategoria, @tipo, @costo, @prov)";
+
+                using (SqlCommand cmd = new SqlCommand(sql, _connection))
+                {
+                    cmd.Parameters.Add("@idEvento", System.Data.SqlDbType.Int).Value = idEvento;
+                    cmd.Parameters.Add("@idCategoria", System.Data.SqlDbType.Int).Value = idCategoria;
+                    cmd.Parameters.Add("@tipo", System.Data.SqlDbType.NVarChar, 200).Value = (object?)servicio.TipoServicio ?? DBNull.Value;
+                    cmd.Parameters.Add("@costo", System.Data.SqlDbType.Real).Value = servicio.Costo;
+                    cmd.Parameters.Add("@prov", System.Data.SqlDbType.NVarChar, 200).Value = (object?)servicio.Proveedor ?? DBNull.Value;
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            finally
+            {
+                _connection.Close();
+            }
         }
 
 
@@ -359,6 +421,112 @@ namespace AccesoDatos
             return e;
         }
 
+
+        public void ModificarEventoCorporativo(EventoCorporativo evento)
+        {
+            if (_connection.State != ConnectionState.Closed)
+                _connection.Close();
+
+            _connection.Open();
+            SqlTransaction tx = _connection.BeginTransaction();
+
+            try
+            {
+                string sql = @"
+            UPDATE Evento
+            SET
+                IdCliente = @idCliente,
+                Nombre = @nombre,
+                Ubicacion = @ubicacion,
+                FechaRealizacion = @fechaR,
+                FechaFinalizacion = @fechaF,
+                CantidadAsistentes = @cant,
+                Estado = @estado,
+                NombreEmpresa = @nomEmp,
+                RequiereEquipamientoTecnologico = @reqEq
+            WHERE IdEvento = @idEvento";
+
+                using (SqlCommand cmd = new SqlCommand(sql, _connection, tx))
+                {
+                    cmd.Parameters.AddWithValue("@idCliente", evento.Cliente?.IdCliente ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@nombre", evento.Nombre ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@ubicacion", evento.Ubicacion ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@fechaR", evento.FechaRealizacion);
+                    cmd.Parameters.AddWithValue("@fechaF", evento.FechaFinalizacion);
+                    cmd.Parameters.AddWithValue("@cant", evento.CantidadAsistentes);
+                    cmd.Parameters.AddWithValue("@estado", evento.Estado.ToString());
+                    cmd.Parameters.AddWithValue("@nomEmp", evento.NombreEmpresa ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@reqEq", evento.RequiereEquipamientoTecnologico);
+                    cmd.Parameters.AddWithValue("@idEvento", evento.idEvento);
+
+                    cmd.ExecuteNonQuery();
+                }
+
+                tx.Commit();
+            }
+            catch
+            {
+                tx.Rollback();
+                throw;
+            }
+            finally
+            {
+                _connection.Close();
+            }
+        }
+
+        public void ModificarEventoSocial(EventoSociales evento)
+        {
+            if (_connection.State != ConnectionState.Closed)
+                _connection.Close();
+
+            _connection.Open();
+            SqlTransaction tx = _connection.BeginTransaction();
+
+            try
+            {
+                string sql = @"
+            UPDATE Evento
+            SET
+                IdCliente = @idCliente,
+                Nombre = @nombre,
+                Ubicacion = @ubicacion,
+                FechaRealizacion = @fechaR,
+                FechaFinalizacion = @fechaF,
+                CantidadAsistentes = @cant,
+                Estado = @estado,
+                TipoColaboracion = @tipoCol,
+                IncluyeCatering = @incluyeCat
+            WHERE IdEvento = @idEvento";
+
+                using (SqlCommand cmd = new SqlCommand(sql, _connection, tx))
+                {
+                    cmd.Parameters.AddWithValue("@idCliente", evento.Cliente?.IdCliente ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@nombre", evento.Nombre ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@ubicacion", evento.Ubicacion ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@fechaR", evento.FechaRealizacion);
+                    cmd.Parameters.AddWithValue("@fechaF", evento.FechaFinalizacion);
+                    cmd.Parameters.AddWithValue("@cant", evento.CantidadAsistentes);
+                    cmd.Parameters.AddWithValue("@estado", evento.Estado.ToString());
+                    cmd.Parameters.AddWithValue("@tipoCol", evento.TipoColaboracion ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@incluyeCat", evento.IncluyeCatering);
+                    cmd.Parameters.AddWithValue("@idEvento", evento.idEvento);
+
+                    cmd.ExecuteNonQuery();
+                }
+
+                tx.Commit();
+            }
+            catch
+            {
+                tx.Rollback();
+                throw;
+            }
+            finally
+            {
+                _connection.Close();
+            }
+        }
 
 
 

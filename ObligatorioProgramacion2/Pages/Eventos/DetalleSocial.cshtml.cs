@@ -1,33 +1,43 @@
+using AccesoDatos;
 using Dominio;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Collections.Generic;
 
-public class DetalleSocialModel : PageModel
+namespace ObligatorioProgramacion2.Pages.Eventos
 {
-    [BindProperty]
-    public EventoSociales? EventoSocialesDetalle { get; set; }
-
-    public List<ServiciosContratados> servicios;
-
-    public IActionResult OnGet(int idEvento)
+    public class DetalleSocialModel : PageModel
     {
-        // Verifica si el empleado está logueado
-        if (HttpContext.Session.GetInt32("IdEmpleado") == null)
+        private readonly EventoRepositorio _repo;
+
+        public DetalleSocialModel(EventoRepositorio repo)
         {
-            return RedirectToPage("/Login");
+            _repo = repo;
         }
 
-        // Obtiene los datos del evento social por su ID
-        EventoSocialesDetalle = Empresa.Instancia.ObtenerEventoSocialesPorId(idEvento);
+        [BindProperty]
+        public EventoSociales? EventoSocialesDetalle { get; set; }
 
-        if (EventoSocialesDetalle == null)
+        public List<ServiciosContratados> servicios { get; set; } = new();
+
+        public IActionResult OnGet(int idEvento)
         {
-            return NotFound();
+            if (HttpContext.Session.GetInt32("IdEmpleado") == null)
+            {
+                return RedirectToPage("/Login");
+            }
+
+            EventoSocialesDetalle = _repo.ObtenerEventoSocialesPorId(idEvento);
+
+            if (EventoSocialesDetalle == null)
+            {
+                return NotFound();
+            }
+
+            // El repo ya carga servicios en ObtenerEventoSocialesPorId (CargarServicios)
+            servicios = EventoSocialesDetalle.ObtenerServicios();
+
+            return Page();
         }
-
-        // Carga la lista de servicios contratados para este evento
-        servicios = EventoSocialesDetalle.ObtenerServicios();
-
-        return Page();
     }
 }

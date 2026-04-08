@@ -1,4 +1,4 @@
-﻿@page "{idEvento:int}"
+﻿    @page "{idEvento:int}"
 @model EditarEventoCorporativoModel
 @using Dominio;
 @{
@@ -7,10 +7,12 @@
 <div class="row d-flex justify-content-center">
     <form class="col-6" method="post">
 
-        <!--Method post sirve para que no se vea la informacion en la url-->
-
+        <!-- ocultos necesarios -->
+        <!-- ocultos necesarios -->
         <input type="hidden" asp-for="EventoCorporativoEditar.idEvento" />
-
+        <input type="hidden" asp-for="EventoCorporativoEditar.Cliente.IdCliente" />
+        
+    
 
         <div class="mb-3">
             <label asp-for="EventoCorporativoEditar.Nombre" class="form-label">Nombre</label>
